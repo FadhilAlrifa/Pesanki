@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pesanki</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <!-- Tautan ke file CSS modal yang baru -->
+    <link rel="stylesheet" href="dist/css/modal-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="index.html">
+                                <img class="logo" src="dist/images/logo.png" alt="Logo Pesanki">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav class="header-nav">
+                        <button id="header-nav-toggle" class="header-nav-toggle" aria-controls="header-nav-menu" aria-expanded="false">
+                            <span class="screen-reader-text">Menu</span>
+                            <span class="hamburger"><span></span></span>
+                        </button>
+                        <div id="header-nav-menu" class="header-nav-menu">
+                            <ul class="list-reset">
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="#">Kontak</a></li>
+                            </ul>
+                            <ul class="list-reset header-nav-cta">
+                                <li><a class="button button-sm button-primary button-shadow" href="login.html">Login</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title mt-0">Silahkan lakukan pemesanan</h1>
+                            <p class="hero-paragraph">Jelajahi beragam menu lezat dari restoran kami. Pesan sekarang dan kami antar langsung ke meja Anda.</p>
+                            <div class="hero-cta"><a class="button button-shadow" href="menu.html">Lihat Menu</a><a class="button button-primary button-shadow" href="">Pesan Sekarang</a></div>
+                        </div>
+                        <div class="hero-app">
+                            <img class="device-mockup" src="dist/images/eat.svg" alt="App preview">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="features section">
+                <div class="container">
+                    <div class="features-inner section-inner">
+                        <h2 class="section-title mt-0">Menu Favorite</h2>
+                        <div class="menu-grid-wrap">
+
+                            <div class="menu-card feature" data-nama="Ayam Bakar Madu" data-harga="25000" data-gambar="https://images.unsplash.com/photo-1630315500315-43112e2bfd88?q=80&w=1673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1630315500315-43112e2bfd88?q=80&w=1673&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ayam Bakar Madu">
+                                </div>
+                                <div class="menu-card-overlay">
+                                    <div class="menu-card-content">
+                                        <div class="menu-card-header">
+                                            <h3 class="menu-title">Ayam Bakar Madu</h3>
+                                            <p class="menu-price">Rp 25.000</p>
+                                        </div>
+                                        <div class="menu-card-actions">
+                                            <div class="menu-icons">
+                                                <a href="#" class="icon-button" aria-label="Sukai"><i class="fas fa-heart"></i></a>
+                                                <a href="#" class="icon-button" aria-label="Info"><i class="fas fa-comment-dots"></i></a>
+                                            </div>
+                                            <a href="#" class="order-button" aria-label="Pesan"><i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card feature" data-nama="Ayam Bakar Taliwang" data-harga="28000" data-gambar="https://images.unsplash.com/photo-1712565043059-cd19ff8394cb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <div class="menu-card-image">
+                                    <img src="https://images.unsplash.com/photo-1712565043059-cd19ff8394cb?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ayam Bakar Taliwang">
+                                </div>
+                                <div class="menu-card-overlay">
+                                    <div class="menu-card-content">
+                                        <div class="menu-card-header">
+                                            <h3 class="menu-title">Ayam Bakar Taliwang</h3>
+                                            <p class="menu-price">Rp 28.000</p>
+                                        </div>
+                                        <div class="menu-card-actions">
+                                            <div class="menu-icons">
+                                                <a href="#" class="icon-button"><i class="fas fa-heart"></i></a>
+                                                <a href="#" class="icon-button"><i class="fas fa-comment-dots"></i></a>
+                                            </div>
+                                            <a href="#" class="order-button"><i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="menu-card feature" data-nama="Ayam Bakar Utuh" data-harga="127000" data-gambar="https://plus.unsplash.com/premium_photo-1664391666682-7e84a1736bd4?q=80&w=1057&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                                <div class="menu-card-image">
+                                    <img src="https://plus.unsplash.com/premium_photo-1664391666682-7e84a1736bd4?q=80&w=1057&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ayam Bakar Utuh">
+                                </div>
+                                <div class="menu-card-overlay">
+                                    <div class="menu-card-content">
+                                        <div class="menu-card-header">
+                                            <h3 class="menu-title">Ayam Bakar Utuh</h3>
+                                            <p class="menu-price">Rp 127.000</p>
+                                        </div>
+                                        <div class="menu-card-actions">
+                                            <div class="menu-icons">
+                                                <a href="#" class="icon-button"><i class="fas fa-heart"></i></a>
+                                                <a href="#" class="icon-button"><i class="fas fa-comment-dots"></i></a>
+                                            </div>
+                                            <a href="#" class="order-button"><i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+            <div id="order-modal" class="order-modal">
+                <div class="modal-content">
+                    <button id="modal-close-btn" class="modal-close" aria-label="Tutup">&times;</button>
+                    <div class="modal-body">
+                        <div class="item-details">
+                            <img id="modal-item-image" src="" alt="Gambar Menu" class="modal-item-image">
+                            <div class="item-info">
+                                <h2 id="modal-item-name">Nama Menu</h2>
+                                <p id="modal-item-price" class="item-price">Rp 0</p>
+                            </div>
+                        </div>
+                        <div class="quantity-control">
+                            <label for="quantity-input">Jumlah:</label>
+                            <div class="quantity-buttons">
+                                <button id="btn-minus" aria-label="Kurangi jumlah">-</button>
+                                <input type="text" id="quantity-input" value="1" readonly>
+                                <button id="btn-plus" aria-label="Tambah jumlah">+</button>
+                            </div>
+                        </div>
+                        <div class="subtotal-section">
+                            <h3>Subtotal</h3>
+                            <p id="subtotal-price">Rp 0</p>
+                        </div>
+                        <div class="notes-section">
+                            <label for="order-notes">Catatan untuk Koki (opsional):</label>
+                            <textarea id="order-notes" rows="3" placeholder="Contoh: Tidak pedas, banyakin sambal..."></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button id="cancel-btn" class="button-secondary">Batal</button>
+                        <button id="add-to-cart-btn" class="button-primary">Pesan Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="site-footer-inner has-top-divider">
+                    <div class="brand footer-brand">
+                        <a href="index.html">
+                            <img class="logo" src="dist/images/logo.png" alt="Logo Pesanki">
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li><a href="#"><span class="screen-reader-text">Facebook</span><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFF"/></svg></a></li>
+                        <li><a href="#"><span class="screen-reader-text">Twitter</span><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFF"/></svg></a></li>
+                        <li><a href="#"><span class="screen-reader-text">Google</span><svg width="16" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFF"/></svg></a></li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2025 Pesanki, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="dist/js/main.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // ----- KODE UNTUK NAVBAR TOGGLE (SUDAH ADA) -----
+            const navToggle = document.getElementById('header-nav-toggle');
+            const navMenu = document.getElementById('header-nav-menu');
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function () {
+                    navMenu.classList.toggle('is-active');
+                    navToggle.setAttribute('aria-expanded', navMenu.classList.contains('is-active'));
+                });
+            }
+
+            // ----- KODE BARU UNTUK NAVBAR STICKY -----
+            const header = document.querySelector('.site-header');
+            const bodyWrap = document.querySelector('.body-wrap');
+            if (header) {
+                const headerHeight = header.offsetHeight; // Dapatkan tinggi header
+                
+                window.addEventListener('scroll', function() {
+                    // Cek jika posisi scroll lebih besar dari tinggi header
+                    if (window.scrollY > headerHeight) {
+                        header.classList.add('is-sticky');
+                        bodyWrap.classList.add('header-is-sticky');
+                    } else {
+                        header.classList.remove('is-sticky');
+                        bodyWrap.classList.remove('header-is-sticky');
+                    }
+                });
+            }
+        });
+    </script>
+    
+    <!-- Tautan ke file JavaScript modal yang baru -->
+    <script src="dist/js/modal-script.js"></script>
+</body>
+</html>
