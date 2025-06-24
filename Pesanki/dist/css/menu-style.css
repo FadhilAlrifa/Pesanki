@@ -1,0 +1,184 @@
+/* =================================================================== */
+/* GAYA HALAMAN MENU
+/* =================================================================== */
+.header-nav-menu .list-reset > li > a.is-active {
+    color: #fff; /* Warna yang mencolok, sesuaikan jika perlu */
+    font-weight: 700; /* Membuat teks sedikit lebih tebal */
+}
+.site-header.is-sticky {
+    position: fixed; /* Ini adalah kunci utamanya */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Memastikan navbar selalu di atas konten lain */
+    
+    /* Menerapkan gaya pada .body-wrap untuk konsistensi */
+    max-width: 1280px; 
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Animasi agar transisi lebih mulus */
+    animation: slideDown 0.35s ease-out;
+
+    /* Tambahkan bayangan agar terlihat terpisah dari konten */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	background-color: #06101F;
+}
+
+/* Aturan untuk mencegah konten "melompat" ke atas */
+.body-wrap.header-is-sticky {
+    padding-top: 85px; /* Sesuaikan angka ini dengan tinggi header Anda */
+}
+.menu-page .page-title {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+
+.menu-page .page-subtitle {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto 48px auto;
+    color: #7487A3;
+}
+
+/* --- Filter Buttons --- */
+.menu-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 10px 24px;
+    border: 1px solid #273C5A;
+    background-color: transparent;
+    color: #7487A3;
+    border-radius: 99px;
+    cursor: pointer;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #273C5A;
+    color: #fff;
+}
+
+.filter-btn.is-active {
+    background-color: #F9425F;
+    border-color: #F9425F;
+    color: #fff;
+}
+
+/* --- Menu List --- */
+.menu-list {
+    display: grid;
+    gap: 24px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: flex-end;
+    background-color: #0b1524;
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid #273C5A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.menu-item-info {
+    flex-grow: 1;
+}
+
+.menu-item-title {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 20px;
+    margin: 0 0 4px 0;
+}
+
+.menu-item-description {
+    font-size: 14px;
+    color: #7487A3;
+    margin: 0 0 8px 0;
+    line-height: 1.5;
+}
+
+.menu-item-price {
+    font-size: 16px;
+    font-weight: 700;
+    color: #F9425F;
+    margin: 0;
+}
+
+
+/* --- GAYA BARU UNTUK TOMBOL ALTERNATIF --- */
+.menu-item .order-button1 {
+    margin-left: 16px;
+    white-space: nowrap;
+    padding: 10px 24px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    background-color: #F9425F; /* Latar belakang awal transparan */
+    border: 1px solid #273C5A;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transisi mulus */
+}
+
+.menu-item .order-button1:hover {
+    background-color: transparent; /* Warna latar saat hover */
+    border-color: #F9425F;     /* Warna border saat hover */
+}
+/* ================================== */
+
+
+/* Animasi untuk filter */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.menu-item.hidden {
+    display: none;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 640px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-item-image {
+        width: 100%;
+        height: 150px;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+    .menu-item .order-button1 {
+        margin-top: 16px;
+        margin-left: 0;
+        width: 100%;
+    }
+}

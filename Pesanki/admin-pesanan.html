@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Daftar Pesanan</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <h1 class="sidebar-logo">
+                 <a href="index.html">
+                    <img src="dist/images/logo.png" alt="Logo Pesanki">
+                    <span>Admin Panel</span>
+                </a>
+            </h1>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html"><i class="fas fa-utensils"></i> Manajemen Menu</a></li>
+                    <li><a href="admin-pesanan.html" class="is-active"><i class="fas fa-receipt"></i> Daftar Pesanan</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Kembali ke Situs</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Daftar Semua Pesanan</h2>
+                <p>Lihat semua riwayat pesanan yang telah dilakukan oleh pelanggan.</p>
+            </header>
+
+            <div class="list-card full-width">
+                <div class="table-wrapper">
+                    <table class="order-table">
+                        <thead>
+                            <tr>
+                                <th>ID Pesanan</th>
+                                <th>Tanggal</th>
+                                <th>Detail Item</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Contoh Baris Pesanan 1 -->
+                            <tr>
+                                <td>#P001</td>
+                                <td>24 Jun 2025</td>
+                                <td>Ayam Bakar Madu (x2), Es Teh Manis (x2), Kentang Goreng (x1)</td>
+                                <td>Rp 84.360</td>
+                                <td><span class="status-badge status-completed">Selesai</span></td>
+                            </tr>
+                            <!-- Contoh Baris Pesanan 2 -->
+                            <tr>
+                                <td>#P002</td>
+                                <td>23 Jun 2025</td>
+                                <td>Nasi Goreng Spesial (x1)</td>
+                                <td>Rp 35.520</td>
+                                <td><span class="status-badge status-completed">Selesai</span></td>
+                            </tr>
+                            <!-- Contoh Baris Pesanan 3 -->
+                            <tr>
+                                <td>#P003</td>
+                                <td>23 Jun 2025</td>
+                                <td>Ayam Bakar Taliwang (x4)</td>
+                                <td>Rp 125.440</td>
+                                <td><span class="status-badge status-cancelled">Dibatalkan</span></td>
+                            </tr>
+                            <!-- Data pesanan lainnya akan dimuat di sini -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

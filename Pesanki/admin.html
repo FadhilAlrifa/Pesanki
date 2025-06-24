@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Manajemen Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700|Playfair+Display:700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/admin-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="admin-wrapper">
+        <aside class="sidebar">
+            <h1 class="sidebar-logo">
+                <a href="index.html">
+                    <img src="dist/images/logo.png" alt="Logo Pesanki">
+                </a>
+            </h1>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="admin.html" class="is-active"><i class="fas fa-utensils"></i> Manajemen Menu</a></li>
+                    <li><a href="admin-pesanan.html"><i class="fas fa-receipt"></i> Daftar Pesanan</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Kembali ke Situs</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="main-header">
+                <h2>Manajemen Menu</h2>
+                <p>Tambah, edit, atau hapus item menu yang tersedia untuk pelanggan.</p>
+            </header>
+
+            <div class="content-grid">
+                <!-- Kolom Form untuk Tambah/Edit Menu -->
+                <div class="form-card">
+                    <h3 id="form-title">Tambah Menu Baru</h3>
+                    <form id="menu-form">
+                        <input type="hidden" id="menu-id">
+                        <div class="form-group">
+                            <label for="nama">Nama Menu</label>
+                            <input type="text" id="nama" name="nama" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="harga">Harga</label>
+                            <input type="number" id="harga" name="harga" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="kategori">Kategori</label>
+                            <select id="kategori" name="kategori" required>
+                                <option value="makanan">Makanan Utama</option>
+                                <option value="minuman">Minuman</option>
+                                <option value="camilan">Camilan</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="deskripsi">Deskripsi Singkat</label>
+                            <textarea id="deskripsi" name="deskripsi" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="gambar">URL Gambar</label>
+                            <input type="url" id="gambar" name="gambar" required>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="button button-primary" id="btn-save">Simpan</button>
+                            <button type="button" class="button button-secondary" id="btn-cancel" style="display: none;">Batal</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Kolom Daftar Menu yang Ada -->
+                <div class="list-card">
+                    <h3>Daftar Menu Saat Ini</h3>
+                    <div id="menu-list-container">
+                        <!-- Contoh Item -->
+                        <div class="menu-list-item" data-id="1">
+                            <img src="https://images.unsplash.com/photo-1512058564366-18510be2db19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Nasi Goreng">
+                            <div class="item-info">
+                                <h4>Nasi Goreng Spesial</h4>
+                                <p>Rp 32.000</p>
+                            </div>
+                            <div class="item-actions">
+                                <button class="btn-edit"><i class="fas fa-pencil-alt"></i></button>
+                                <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
+                            </div>
+                        </div>
+                        <!-- Item lainnya akan ditambahkan oleh JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="dist/js/admin-script.js"></script>
+</body>
+</html>

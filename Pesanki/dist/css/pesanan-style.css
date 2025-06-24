@@ -1,0 +1,146 @@
+/* STYLES FOR ORDER/CART PAGE - DARK THEME */
+
+.order-page {
+    background-color: #06101F; /* Latar belakang gelap seperti halaman menu */
+    color: #fff;
+}
+.header-nav-menu .list-reset > li > a.is-active {
+    color: #fff; /* Warna yang mencolok, sesuaikan jika perlu */
+    font-weight: 700; /* Membuat teks sedikit lebih tebal */
+}
+
+.order-page-inner .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.order-page-inner .page-title {
+    font-size: 2.8rem;
+    color: #fff; /* Teks putih */
+}
+
+.order-page-inner .page-subtitle {
+    font-size: 1.1rem;
+    color: #7487A3; /* Warna aksen abu-abu kebiruan */
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.order-summary-card {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #0b1524; /* Latar belakang kartu yang lebih gelap */
+    border-radius: 12px;
+    border: 1px solid #273C5A;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    padding: 24px 32px;
+}
+
+.order-summary-list {
+    margin-bottom: 24px;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #273C5A; /* Border lebih gelap */
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-item-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.order-item-details {
+    flex-grow: 1;
+}
+
+.order-item-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2rem;
+    color: #fff; /* Teks putih */
+    margin-bottom: 4px;
+}
+
+.order-item-meta {
+    font-size: 0.9rem;
+    color: #7487A3; /* Warna aksen */
+}
+
+.order-item-subtotal {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-left: 20px;
+    color: #fff; /* Teks putih */
+}
+
+.order-item-remove {
+    background: none;
+    border: none;
+    color: #7487A3;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: color 0.3s ease;
+}
+
+.order-item-remove:hover {
+    color: var(--primary-color);
+}
+
+.order-total-summary {
+    padding-top: 20px;
+    border-top: 1px solid #273C5A;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.summary-row span:first-child {
+    color: #7487A3; /* Warna aksen */
+}
+.summary-row span:last-child {
+    font-weight: 700;
+    color: #fff; /* Teks putih */
+}
+
+.summary-row.total-row {
+    font-size: 1.4rem;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid #273C5A;
+}
+
+.summary-row.total-row span:first-child {
+    color: #fff; /* Teks putih */
+}
+.summary-row.total-row span:last-child {
+    color: var(--primary-color);
+}
+
+.payment-cta {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.button.button-large {
+    padding: 16px 40px;
+    font-size: 1.1rem;
+    width: 100%;
+}
